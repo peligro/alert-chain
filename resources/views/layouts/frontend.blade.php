@@ -8,8 +8,9 @@
     <link rel="shortcut icon" href="{{asset('public/images/favicon.ico')}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
-    <link href="{{asset('public/css/styles.css')}}" rel="stylesheet" />
-    <link href="{{asset('public/fontawesome/css/fontawesome.min.css')}}" rel="stylesheet" type="text/css" />
+    
+    <link href="{{asset('public/fontawesome/css/fontawesome.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('public/css/estilos.css')}}" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,7 +22,8 @@
   <body>
   <div class="container">
     <div class="panel panel-primary">
-      <div class="panel-heading"><h3>Despacho a Domicilio</h3></div>
+      <div class="panel-heading">
+        <span class="titulo">Despacho a Domicilio</span></div>
       <div class="panel-body">
         <!--contenido-->
             @yield('content')

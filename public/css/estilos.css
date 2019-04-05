@@ -1,0 +1,18 @@
+.borde
+{
+	border-style: solid;
+   border-width: 1px;
+   margin-right: 10px;
+   margin-top: 10px;
+   width: 350px;
+   border-color: #A5AEEA;
+}
+.borde:hover
+{
+   border-color: #4D61E3;
+}
+.titulo
+{
+	font-size: 18px;
+	font-weight: bold;
+}
