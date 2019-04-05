@@ -33,8 +33,13 @@
         // Ejecuto la funcion con un intervalo de un segundo
         setTimeout("muestraReloj()", 1000);
         }
+ function refrescar()
+ {
+     setTimeout(function(){ window.location=location.href; }, 5000);
+ }
  //funcionalidades al inicio
 window.onload = function() 
             {
             muestraReloj();
+            refrescar();
             };
