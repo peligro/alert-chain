@@ -21,9 +21,11 @@
   <body>
   <div class="container">
     <div class="panel panel-primary">
-      <div class="panel-heading"><h3>Alert Chain</h3></div>
+      <div class="panel-heading"><h3>Despacho a Domicilio</h3></div>
       <div class="panel-body">
-        sss
+        <!--contenido-->
+            @yield('content')
+          <!--/contenido-->
       </div>
       <div class="panel-footer" style="text-align: center;">
         <hr />
@@ -36,7 +38,6 @@
     <script src="{{asset('public/js/jquery.js')}}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{asset('public/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('public/js/custom.js')}}"></script>
     @stack('scripts')
     <!--scripts propios-->
     <script src="{{asset('public/js/funciones.js')}}"></script>
