@@ -14,14 +14,14 @@
     <!--caja-->
      <div class="col-md-4 borde">
        
-          <h2>Conexión Logifire</h2>
+          <h2>Conexión PI</h2>
           <p class="text-success">Conexión PI .</p>
      </div>
      <!--/caja-->
     <!--caja-->
      <div class="col-md-4 borde">
        
-          <h2>Conexión Logifire</h2>
+          <h2>Seguimiento LPN</h2>
           <p class="text-success">Seguimiento LPN .</p>
      </div>
      <!--/caja-->
