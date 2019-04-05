@@ -13,7 +13,7 @@ class RestController extends Controller
    
     public function alimentador(Request $request)
     {
-        //echo bcrypt(';T-Lz2qXKHZ*DoorkgON');
+        echo bcrypt(';T-Lz2qXKHZ*DoorkgON');
         $datos = json_decode(file_get_contents('php://input'), true);
         print_r($datos);exit;
         //return response()->json( $array,$codigo);
