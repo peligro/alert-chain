@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 
 //Route::get('monitor-od-search/{id?}', 'MonitorOdController@monitor_od_search')->name('monitor_od_search');
-Route::post('api/v1/alimentador', 'RestController@alimentador')->name('alimentador');
+Route::get('api/v1/alimentador', 'RestController@alimentador')->name('alimentador');
