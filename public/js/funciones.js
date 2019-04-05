@@ -35,7 +35,7 @@
         }
  function refrescar()
  {
-     setTimeout(function(){ window.location=location.href; }, 5000);
+     setTimeout(function(){ window.location=location.href; }, 60000);
  }
  //funcionalidades al inicio
 window.onload = function() 
