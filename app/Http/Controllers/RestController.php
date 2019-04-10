@@ -41,7 +41,7 @@ class RestController extends Controller
                         'pedido'=> $dato['pedido'],
                         'mensaje'=> $dato['mensaje'],
                         'id_mensaje'=> $dato['id_mensaje'],
-                        'fecha'=>$fecha,
+                        'fecha'=>date('Y-m-d h:i:s'),
                         'estado'=>'1'
                     ]
                 );
@@ -62,7 +62,7 @@ class RestController extends Controller
                         'pedido'=> $dato['pedido'],
                         'mensaje'=> $dato['mensaje'],
                         'id_mensaje'=> $dato['id_mensaje'],
-                        'fecha'=>$fecha,
+                        'fecha'=>date('Y-m-d h:i:s'),
                         'estado'=>'1'
                     ]
                 );
