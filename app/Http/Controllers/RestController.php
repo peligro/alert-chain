@@ -38,7 +38,7 @@ class RestController extends Controller
                     [
                         'interfaces_id'=>$existe->id,
                         'documento'=> $dato['documento'],
-                        'pedido'=> $dato['pedido'],
+                        //'pedido'=> $dato['pedido'],
                         'mensaje'=> $dato['mensaje'],
                         'id_mensaje'=> $dato['id_mensaje'],
                         'fecha'=>date('Y-m-d h:i:s'),
@@ -59,7 +59,7 @@ class RestController extends Controller
                     [
                         'interfaces_id'=>$interface->id,
                         'documento'=> $dato['documento'],
-                        'pedido'=> $dato['pedido'],
+                        //'pedido'=> $dato['pedido'],
                         'mensaje'=> $dato['mensaje'],
                         'id_mensaje'=> $dato['id_mensaje'],
                         'fecha'=>date('Y-m-d h:i:s'),
