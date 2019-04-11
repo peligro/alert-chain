@@ -26,8 +26,9 @@ class RestController extends Controller
     public function store(Request $request)
     {
         $datos = json_decode(file_get_contents('php://input'), true);
+        //echo $datos['root'][0]['interface'] ;exit;
         $mensaje='Ingreso normal. ';
-        foreach($datos as $dato)
+        foreach($datos['root'] as $dato)
         {
             $existe=Interfaces::where(['nombre'=>$dato['interface']])->first();
             if(is_object($existe))
@@ -37,7 +38,6 @@ class RestController extends Controller
                     [
                         'interfaces_id'=>$existe->id,
                         'documento'=> $dato['documento'],
-                        //'pedido'=> $dato['pedido'],
                         'mensaje'=> $dato['mensaje'],
                         'id_mensaje'=> $dato['id_mensaje'],
                         'fecha'=>date('Y-m-d h:i:s'),
@@ -57,7 +57,6 @@ class RestController extends Controller
                     [
                         'interfaces_id'=>$interface->id,
                         'documento'=> $dato['documento'],
-                        //'pedido'=> $dato['pedido'],
                         'mensaje'=> $dato['mensaje'],
                         'id_mensaje'=> $dato['id_mensaje'],
                         'fecha'=>date('Y-m-d h:i:s'),
