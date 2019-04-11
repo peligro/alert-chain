@@ -32,7 +32,6 @@ class RestController extends Controller
             $existe=Interfaces::where(['nombre'=>$dato['interface']])->first();
             if(is_object($existe))
             {
-                $fecha=$dato['fecha'].' '.$dato['hora'];
                 $registro=InterfacesMensajes::create
                 (
                     [
@@ -53,7 +52,6 @@ class RestController extends Controller
                         'nombre'=>$dato['interface']
                     ]
                 );
-                $fecha=$dato['fecha'].' '.$interface['hora'];
                 $registro=InterfacesMensajes::create
                 (
                     [
